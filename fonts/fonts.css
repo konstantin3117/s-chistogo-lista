@@ -1,0 +1,22 @@
+@font-face {
+  src: url(https://github.com/yandex-praktikum/s-chistogo-lista/tree/main/fonts);
+  font-family:'ebgaramondmedium';
+  font-weight: 500px;
+}
+
+@font-face {
+  src: url(https://github.com/yandex-praktikum/s-chistogo-lista/tree/main/fonts);
+  font-family:'ebgaramondregular';
+  font-weight: 400px;
+}
+
+@font-face {
+  src: url(https://github.com/yandex-praktikum/s-chistogo-lista/tree/main/fonts);
+  font-family:'interregular';
+  font-weight: 400px;
+}
+@font-face {
+  src: url(https://github.com/yandex-praktikum/s-chistogo-lista/tree/main/fonts);
+  font-family:'interbold';
+  font-weight: 700px;
+}
