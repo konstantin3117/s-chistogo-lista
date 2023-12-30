@@ -1,1 +1,107 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
+}
 
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.content-section {
+    box-sizing: border-box;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section_theme_dark {
+    background-color: black;
+    color: white;
+}
+
+.content-section_theme_bright {
+    background-color: yellow;
+    color: black;
+}
+
+a {
+    color: inherit;
+  }
+
+.main {
+    text-decoration: none;
+  }
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 24px 20px;
+}
+
+.header__menu-item {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.cover {
+    font-family: 'EB Garamond 400', 'Arial', 'Helvetica', sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 400; /*Почему то не подключился шрифт*/
+    background-image: url(/images/cover.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Просто попытка нормализовать задний фон на ПК*/
+    min-height: 200px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+span {
+    display: flex;
+}
+
+.text-left {
+    justify-content: start;
+}
+
+.text-center {
+    justify-content: center;
+}
+
+.text-right {
+    justify-content: end;
+    margin-right: 24px;
+}
+
+.intro {
+    padding: 30px 20px 37px;
+}
+
+.intro__heading {
+    color: #CCC;
+    font-size: 16px;
+    font-weight: 400; /*Поблемы с подключением шрифта*/
+    display: flex;
+    justify-content: space-between; /*Для адаптивности на пк*/
+}
+
+.intro__date {
+    white-space: nowrap;
+}
+
+.intro__main-text {
+    font-size: 16px;
+    font-weight: 400; /*Поблемы с подключением шрифта*/
+    margin: 24px 0px;
+    text-indent: 24px;
+}
+
+.p {
+    margin-top: 400px;
+}
