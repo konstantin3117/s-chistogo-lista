@@ -1,7 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
 body {
-    padding: 0;
-    box-sizing: border-box;
-	/*Тест*/
     margin: 0;
     background-color: #131313;
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
