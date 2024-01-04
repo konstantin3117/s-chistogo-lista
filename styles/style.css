@@ -1,6 +1,13 @@
 body {
     background-color: #131313;
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
+    margin: 0; /* обнуляем внешние отступы */
+	padding: 0; /* обнуляем внутренние отступы */
+	border: 0; /* убираем бордюры */
+	outline: 0; /* убираем контуры */
+	font-size: 100%; /* задаем базовый размер шрифта, значение по умолчанию = 16px */
+	vertical-align: baseline; /* устанавливаем базовое вертикальное выравнивание */
+	background: transparent; /* устанавливаем фон прозрачным */
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
