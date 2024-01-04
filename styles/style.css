@@ -1,6 +1,9 @@
 body {
-    box-sizing: border-box;
     padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;/*Тест*/
     margin: 0;
     background-color: #131313;
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
