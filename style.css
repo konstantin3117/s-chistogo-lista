@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: #131313; /*Временно фон*/
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
@@ -9,86 +10,95 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     padding: 0;
 }
 
-.content-section {
-    box-sizing: border-box;
+.content-section { /*Не задавать для main*/
     width: 360px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;/*Нужно ли*/
+    box-sizing: border-box; /*Нужно ли*/
 }
 
 .content-section_theme_dark {
-    background-color: black;
-    color: white;
+    background-color: #131313;
+    color: #F5F5F5;
+    min-height: 100px; /*Временно*/
 }
 
 .content-section_theme_bright {
-    background-color: yellow;
-    color: black;
+    background-color: #FEE42A;
+    color: #131313;
+    min-height: 100px; /*Временно*/
+}
+
+.header {
+    margin: 24px 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.header__logo {
+    margin: 0;
+    width: 78.45px;
+    height: 15.43px;
+}
+
+.header__menu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    text-underline-offset: 3px;
+}
+
+.header__menu-item_active {
+    text-decoration: none;
 }
 
 a {
     color: inherit;
-  }
-
-.main {
-    text-decoration: none;
-  }
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 24px 20px;
-}
-
-.header__menu-item {
-    list-style-type: none;
-    margin-bottom: 12px;
 }
 
 .cover {
-    font-family: 'EB Garamond 400', 'Arial', 'Helvetica', sans-serif;
-}
-
-h1 {
-    font-size: 72px;
-    font-weight: 400; /*Почему то не подключился шрифт*/
-    background-image: url(/images/cover.svg);
+    font-family: "EB Garamond 400";
+    height: 220px;
+    margin: 0 0 30px 20px;
+    background-image: url(./images/cover.svg);
     background-repeat: no-repeat;
-    background-size: 100% 100%; /* Просто попытка нормализовать задний фон на ПК*/
-    min-height: 200px;
-    margin-top: 7px;
-    margin-left: 20px;
-    margin-bottom: 5px;
+    background-position: 0 100%;
 }
 
-span {
+.cover-text-left, .cover-text-right, .cover-text-center {
     display: flex;
+    font-size: 72px;
+    font-weight: 15;
+    line-height: 100%;
 }
 
-.text-left {
-    justify-content: start;
+.cover-text-left {
+    margin-top: -10px;
 }
 
-.text-center {
+.cover-text-center {
     justify-content: center;
+    padding-right: 20px;
 }
 
-.text-right {
+.cover-text-right {
     justify-content: end;
     margin-right: 24px;
 }
 
 .intro {
-    padding: 30px 20px 37px;
+    margin: 0 20px 37px;
 }
 
 .intro__heading {
-    color: #CCC;
-    font-size: 16px;
-    font-weight: 400; /*Поблемы с подключением шрифта*/
     display: flex;
-    justify-content: space-between; /*Для адаптивности на пк*/
+    color: #CCC;
+}
+
+h1 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .intro__date {
@@ -96,12 +106,121 @@ span {
 }
 
 .intro__main-text {
-    font-size: 16px;
-    font-weight: 400; /*Поблемы с подключением шрифта*/
-    margin: 24px 0px;
-    text-indent: 24px;
+    line-height: 21.6px;
 }
 
-.p {
-    margin-top: 400px;
+p {
+    margin-top: 25px;
+}
+
+.reasons {
+    padding: 0 20px 24px;
+}
+
+.content-section__subtitle {
+    padding: 40px 0 32px;
+}
+
+.reasons-text__right, .reasons-text__left, .how-to-text__right, .how-to-text__left {
+    font-family: "EB Garamond 500";
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 115%;
+    display: flex;
+}
+.reasons-text__right, .how-to-text__right {
+    justify-content: end;
+}
+
+.reasons-text__left, .how-to-text__left {
+    justify-content: start;
+}
+
+.content-section__introduction {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    padding-bottom: 32px;
+}
+
+.content-section__list-item {
+    font-family: "Inter 400";
+    margin-left: 16px;
+    font-size: 16px;
+    line-height: 21.6px;
+    padding-bottom: 16px;
+}
+
+.content-section__list-accent {
+    font-family: "Inter 700";
+    font-size: 16px;
+    font-style: normal;
+    line-height: 21.6px;
+}
+
+.how-to {
+    margin: 0 20px 60px;
+}
+
+.card {
+    border-radius: 30px;
+    padding: 21px;
+    margin-bottom: 32px;
+}
+
+.card_theme_dark {
+    background-color: #343434;
+    color: #F5F5F5;
+}
+
+.card_theme_bright {
+    background-color: #FEE42A;
+    color: #131313;
+}
+
+.img-polyarinov, .img-bunin {
+    width: 100px;
+    height: 100px;
+}
+
+.card__author-name {
+    font-family: "Inter 700";
+    font-size: 16px;
+    line-height: 135%;
+    margin: 5px 0;
+}
+
+.card__title {
+    font-family: "EB Garamond 500";
+    font-size: 22px;
+    line-height: 130%;
+    margin-bottom: 7px;
+}
+
+.card__text {
+    font-family: "Inter 400";
+    font-size: 16px;
+    line-height: 136%;
+    font-weight: 400;
+}
+
+.footer {
+    font-family: "Inter 400";
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1px solid;
+    border-color: #FEE42A;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.link-vk, .link-youtube {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link-vk {
+    margin-right: 15px;
 }
