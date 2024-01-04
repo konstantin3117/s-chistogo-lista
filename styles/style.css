@@ -1,37 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
     background-color: #131313;
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
-    font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     margin: 0;
     padding: 0;
 }
 
 .content-section { /*Не задавать для main*/
     width: 360px;
-    margin: auto;/*Нужно ли*/
-    box-sizing: border-box; /*Нужно ли*/
 }
 
 .content-section_theme_dark {
     background-color: #131313;
     color: #F5F5F5;
-    min-height: 100px; /*Временно*/
 }
 
 .content-section_theme_bright {
     background-color: #FEE42A;
     color: #131313;
-    min-height: 100px; /*Временно*/
 }
 
 .header {
