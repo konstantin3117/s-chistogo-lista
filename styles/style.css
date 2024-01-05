@@ -1,5 +1,5 @@
 body {
-    background-color: #131313;
+    background-color: white;
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
     padding: 0;
     font-size: 100%;
@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -52,10 +52,11 @@ a {
 
 .cover {
     font-family: "EB Garamond 400";
-    margin: 0 0 30px 20px;
+    margin: 36px 0 30px 20px;
     background-image: url(./images/cover.svg);
     background-repeat: no-repeat;
     background-position: 0 100%;
+    min-height: 100px;
 }
 
 .cover-text-left, .cover-text-right, .cover-text-center {
@@ -63,10 +64,6 @@ a {
     font-size: 72px;
     font-weight: 15;
     line-height: 100%;
-}
-
-.cover-text-left {
-    margin-top: -10px;
 }
 
 .cover-text-center {
@@ -202,9 +199,7 @@ p {
     font-family: "Inter 400";
     font-size: 16px;
     font-weight: 400;
-    border-top: 1px solid;
-    border-color: #FEE42A;
-    padding: 20px;
+    margin: 80px 20px 20px;
     display: flex;
     justify-content:space-between;
 }
