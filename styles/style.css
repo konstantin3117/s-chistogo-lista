@@ -1,5 +1,5 @@
 body {
-    background-color: #131313;
+    /*background-color: #131313;*/
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
     font-size: 100%;
     font-weight: normal;
@@ -199,7 +199,7 @@ p {
     display: flex;
     justify-content:space-between;
     min-height: 200px;
-    margin: 0 20px;
+    margin: 0 20px 20px;
     padding: 20px 0;
 }
 
