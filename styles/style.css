@@ -51,11 +51,10 @@ a {
 
 .cover {
     font-family: "EB Garamond 400";
-    margin: 36px 0 30px 20px;
+    margin: 35px 0 30px 20px;
     background-image: url(./images/cover.svg);
     background-repeat: no-repeat;
     background-position: 0 100%;
-    min-height: 220px;
 }
 
 .cover-text-left, .cover-text-right, .cover-text-center {
@@ -67,7 +66,7 @@ a {
 
 .cover-text-center {
     justify-content: center;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .cover-text-right {
@@ -103,11 +102,8 @@ p {
 }
 
 .reasons {
-    padding: 0 20px 24px;
-}
-
-.content-section__subtitle {
-    padding: 40px 0 32px;
+    margin: 40px 20px;
+    padding: 40px 0 22px;
 }
 
 .reasons-text__right, .reasons-text__left, .how-to-text__right, .how-to-text__left {
@@ -130,7 +126,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
-    padding-bottom: 32px;
+    margin: 32px 0;
 }
 
 .content-section__list-item {
@@ -138,7 +134,7 @@ p {
     margin-left: 16px;
     font-size: 16px;
     line-height: 21.6px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .content-section__list-accent {
