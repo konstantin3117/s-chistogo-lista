@@ -1,14 +1,11 @@
-body {
-    /*background-color: #131313;*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
     font-family: 'Inter 400', 'Arial', 'Helvetica', sans-serif;
     font-size: 100%;
     font-weight: normal;
     box-sizing: border-box;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
-    margin: 0;
-    padding: 0;
 }
 
 .content-section_theme_dark {
