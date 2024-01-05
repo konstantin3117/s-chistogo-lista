@@ -51,7 +51,7 @@ a {
 
 .cover {
     font-family: "EB Garamond 400";
-    margin: 35px 0 30px 20px;
+    margin: 35px 20px 30px 20px;
     background-image: url(./images/cover.svg);
     background-repeat: no-repeat;
     background-position: 0 100%;
