@@ -102,7 +102,7 @@ p {
 }
 
 .reasons {
-    margin: 40px 20px;
+    margin: 40px 20px 37px;
     padding: 40px 0 22px;
 }
 
@@ -194,11 +194,13 @@ p {
     font-family: "Inter 400";
     font-size: 16px;
     font-weight: 400;
-    border-top: 1px solid;
+    border-top: 2px solid;
     border-color: #FEE42A;
-    padding: 20px;
     display: flex;
     justify-content:space-between;
+    min-height: 200px;
+    margin: 0 20px;
+    padding: 20px 0;
 }
 
 .link-vk, .link-youtube {
@@ -207,5 +209,5 @@ p {
 }
 
 .link-vk {
-    margin-right: 15px;
+    margin-right: 13px;
 }
