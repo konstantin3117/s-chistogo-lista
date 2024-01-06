@@ -9,11 +9,6 @@ body {
     padding: 0;
 }
 
-.content-section {/*Задать всем кроме main*/
-    box-sizing: border-box;
-    width: 360px;
-}
-
 .content-section_theme_dark {
     background-color: #131313;
     color: #F5F5F5;
@@ -56,7 +51,7 @@ a {
 
 h1 {
     background-image: url(./images/cover.svg);
-    background-repeat: no-repeat;
+    bac
     background-position: 0 100%;
     font-family: "EB Garamond";
     font-size: 72px;
