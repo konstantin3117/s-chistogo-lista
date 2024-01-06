@@ -9,6 +9,11 @@ body {
     padding: 0;
 }
 
+.content-section {/*Задать всем кроме main*/
+    box-sizing: border-box;
+    width: 360px;
+}
+
 .content-section_theme_dark {
     background-color: #131313;
     color: #F5F5F5;
@@ -24,7 +29,7 @@ body {
 .header__all {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
+ 
     margin: 0 20px 24px;
 }
 
@@ -68,7 +73,7 @@ h1 {
 
 .cover-text-right {
     margin-left: 155px;
-    padding-bottom: 5px;
+
 }
 
 .intro {
@@ -95,7 +100,7 @@ h2 {
 }
 
 .reasons {
-    padding-top: 40px;
+
     margin: 0 20px 40px;
 }
 
@@ -129,7 +134,7 @@ h2 {
     margin: 0 1px 40px 15px;
     text-indent: 0px;
     line-height: 135%;
-    padding-bottom: 25px;
+
 }
 
 .content-section__list-item {
@@ -152,7 +157,7 @@ h2 {
 .card_theme_dark {
     background-color: #343434;
     color: #F5F5F5;
-    padding: 20.5px;
+
     line-height: 170%;
     
 }
@@ -160,7 +165,7 @@ h2 {
 .card_theme_bright {
     background-color: #FEE42A;
     color: #131313;
-    padding: 20px;
+
     line-height: 135%;
     margin: 32px 0;
 }
