@@ -3,9 +3,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     padding: 0;
 }
 
-.content-section {
-    width: 360px;
-}
+
 
 .content-section_theme_dark {
     background-color: #131313;
