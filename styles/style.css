@@ -22,7 +22,6 @@ blockquote {
 
 .content-section {
     box-sizing: border-box; /*Задать всем кроме main*/
-    margin: auto;
     width: 360px;
 }
 
