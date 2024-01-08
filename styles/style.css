@@ -16,7 +16,7 @@ ul,
 ol,
 blockquote {
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 .content-section_theme_dark {
