@@ -44,19 +44,21 @@
     text-decoration: none;
 }
 
-.cover__title {
+.cover {
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-size: 95%;
     background-position: 110% 80%;
+    padding: 1px 20px;
+}
+
+.cover__title {
     font-family: "EB Garamond";
     font-size: 72px;
     font-weight: 400;
     display: flex;
     flex-direction: column;
     line-height: 100%;
-    padding: 0 20px;
-    
 }
 
 .cover-text-center {
