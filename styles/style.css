@@ -99,10 +99,7 @@
     font-family: "EB Garamond";
     font-size: 28px;
     font-weight: 500;
-    line-height: 114%
-}
-
-.content-section__subtitle {
+    line-height: 114%;
     display: flex;
     flex-direction: column;
 }
