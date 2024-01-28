@@ -16,7 +16,8 @@
 .header__all {
     display: flex;
     justify-content: space-between;
-    padding: 24px 20px;
+    margin: 0 20px 0;
+    padding-top: 24px;
 }
 
 .header__logo {
@@ -28,6 +29,7 @@
     list-style-type: none;
     line-height: 19.2px;
     font-size: 16px;
+    padding-bottom: 24px;
 }
 
 .header__menu-item:not(:last-child) {
@@ -52,11 +54,12 @@
     color: #FFF;
     display: flex;
     flex-direction: column;
-    padding: 8px 22px;
+    padding: 0px 22px;
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-size: 95%;
     background-position: 20px 30px;
+    padding-top: 6px;
 }
 
 .cover-text-center {
@@ -65,6 +68,7 @@
 
 .cover-text-right {
     text-align: right;
+    padding-bottom: 10px;
 }
 
 .intro {
