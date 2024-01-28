@@ -36,11 +36,6 @@ body {
     color: #131313;
 }
 
-.header {
-    padding: 24px 20px;
-    margin-bottom: 1px;
-}
-
 .header__all {
     display: flex;
     justify-content: space-between;
@@ -49,10 +44,12 @@ body {
 .header__logo {
     width: 78.453px;
     height: 15.432px;
+    margin: 24px 20px;
 }
 
 .header__menu-list {
     list-style: none;
+    margin: 24px 20px;
 }
 
 .header__menu-link__all {
@@ -69,12 +66,12 @@ body {
 }
 
 .cover {
-    padding: 0 24px 5px 20px;
     height: 221px;
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-size: 95%;
     background-position: 110% 100%;
+    margin-bottom: 1px;
 }
 
 .cover__title {
@@ -84,6 +81,7 @@ body {
     line-height: 72px;
     display: flex;
     flex-direction: column;
+    margin: 0 22px 0 20px;
 }
 
 .cover-text-left {
