@@ -43,32 +43,27 @@
     text-decoration: none;
 }
 
-.cover {
+h1 {
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
-    background-size: 95% auto;
-    background-position: 100% 100%;
-    padding: 10px 20px 0 20px;
-    margin-bottom: 0;
-    height: 232px;
-}
-
-.cover__title {
+    background-position: 0 90%;
     font-family: "EB Garamond";
     font-size: 72px;
     font-weight: 400;
+    margin: 0px 0 0px 20px;
+    padding-top: 6px;
     display: flex;
     flex-direction: column;
-    line-height: 72px;
-    padding-bottom: 7px;
+    line-height: 100%
 }
 
 .cover-text-center {
-    text-align: center;
+    margin-left: 47px;
 }
 
 .cover-text-right {
-    text-align: right;
+    margin-left: 155px;
+    padding-bottom: 10px;
 }
 
 .intro {
