@@ -1,6 +1,28 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    background-color: #131313;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  blockquote {
+    margin: 0;
+    padding: 0;
+  }
+
 .content-section {
+    box-sizing: border-box;
+    margin: auto;
     width: 360px;
-    margin: 0 auto;
 }
 
 .content-section_theme_dark {
