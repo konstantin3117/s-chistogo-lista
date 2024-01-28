@@ -1,8 +1,8 @@
+
 body {
     margin: 0;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    background-color: #131313;
+    font-family: "Inter", "Arial", "Helvetica", sans-serif;
+    font-weight: normal;
   }
   
   h1,
@@ -14,6 +14,7 @@ body {
   p,
   ul,
   ol,
+  li,
   blockquote {
     margin: 0;
     padding: 0;
@@ -21,7 +22,7 @@ body {
 
 .content-section {
     box-sizing: border-box;
-    margin: auto;
+    margin:0 auto;
     width: 360px;
 }
 
@@ -35,11 +36,14 @@ body {
     color: #131313;
 }
 
+.header {
+    padding: 24px 20px;
+}
+
 .header__all {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    margin: 0 20px 24px;
+    max-height: 132px;
 }
 
 .header__logo {
@@ -48,55 +52,60 @@ body {
 }
 
 .header__menu-list {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    row-gap: 13px;
-    text-underline-offset: 2px;
+    list-style: none;
+}
+
+.header__menu-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.header__menu-link__all {
+    color: inherit;
+    text-underline-offset: 4px
 }
 
 .header__menu-item_active {
     text-decoration: none;
 }
 
-a {
-    color: inherit;
+.cover {
+    padding: 12px 24px 5px 20px;
+    background-image: url(/images/cover.svg);
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    background-position: 110% bottom;
 }
 
-h1 {
-    background-image: url(./images/cover.svg);
-    background-repeat: no-repeat;
-    background-position: 0 100%;
+.cover__title {
     font-family: "EB Garamond";
     font-size: 72px;
-    font-weight: 400;
-    margin: 32px 0 30px 20px;
+    font-weight: normal;
+    line-height: 72px;
     display: flex;
     flex-direction: column;
-    line-height: 100%
 }
 
 .cover-text-center {
-    margin-left: 47px;
+    text-align: center;
 }
 
 .cover-text-right {
-    margin-left: 155px;
-    padding-bottom: 5px;
+    text-align: right;
 }
 
 .intro {
-    margin: 0 20px 37px;
-}
-
-h2 {
-    font-size: 16px;
-    font-weight: 400;
+    padding: 28px 20px 37px;
 }
 
 .intro__heading {
+    color: #CCC;
     display: flex;
-    color: #CCCCCC;
+    line-height: 120%;
+}
+
+.intro__title {
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .intro__date {
@@ -104,114 +113,111 @@ h2 {
 }
 
 .intro__main-text {
-    margin-top: 24px;
+    margin-top: 25px;
     line-height: 135%;
 }
 
 .reasons {
-    padding-top: 40px;
-    margin: 0 20px 40px;
+    padding: 40px 20px;
 }
 
 .content-section__subtitle {
     font-family: "EB Garamond";
     font-size: 28px;
     font-weight: 500;
-    line-height: 117%;
+    line-height: 114%;
     display: flex;
     flex-direction: column;
 }
 
 .reasons-text__right {
-    margin-left: auto;
-}
-
-.reasons-text__left {
-    margin-right: auto;
+    text-align: right;
 }
 
 .content-section__introduction {
-    margin: 31px 0;
+    margin: 32px 0;
     font-size: 20px;
-    font-weight: 400;
     line-height: 135%;
 }
 
 .content-section__list {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0 1px 40px 15px;
-    text-indent: 0px;
-    line-height: 135%;
-    padding-bottom: 25px;
-}
-
-.content-section__list-item {
-    margin-bottom: 16px;
+    margin-left: 15px;
+    margin-right: 1px;
+    line-height: 21.6px;
 }
 
 .content-section__list-accent {
-    font-weight: 700;
+    font-weight: bold;
+}
+
+.content-section__list-item:not(:last-child) {
+    margin-bottom: 16px;
 }
 
 .how-to {
-    margin: 40px 20px 60px;
-    line-height: 135%;
+    padding: 40px 20px 60px;
+}
+
+.how-to-text__right {
+    text-align: right;
 }
 
 .card {
     border-radius: 30px;
+    list-style: none;
+}
+
+.card:not(:last-child) {
+    margin-bottom: 34px;
+}
+
+.card:nth-last-child(1) {
+    margin-bottom: 2px;
 }
 
 .card_theme_dark {
     background-color: #343434;
     color: #F5F5F5;
-    padding: 20.5px;
-    line-height: 170%;
-    
+    padding: 20px;
 }
 
 .card_theme_bright {
     background-color: #FEE42A;
     color: #131313;
     padding: 20px;
-    line-height: 135%;
-    margin: 32px 0;
 }
 
-.how-to-text__right {
-    margin-left: auto;
-}
-
-.img-polyarinov, .img-bunin {
+.card__author-photo {
     height: 100px;
 }
 
 .card__author-name {
-    font-size: 16px;
-    font-weight: 700;
+    margin: 5px 0 5px;
     line-height: 135%;
-    margin-bottom: 8px;
+    letter-spacing: 0.3px;
 }
 
 .card__title {
     font-family: "EB Garamond";
     font-size: 22px;
+    font-style: normal;
     font-weight: 500;
-    margin-bottom: 7px;
     line-height: 135%;
 }
 
 .card__text {
     font-family: "Inter";
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 135%;
+    margin: 7px 1px 0 0;
 }
 
 .footer {
     font-family: "Inter";
     padding: 20px;
-    border-top: 2px solid;
+    border-top: 1px solid;
     border-color: #FEE42A;
     display: flex;
     justify-content:space-between;
@@ -219,6 +225,7 @@ h2 {
 
 .link-vk, .link-youtube {
     text-decoration: none;
+    color: inherit;
     font-size: 14px;
 }
 
