@@ -66,41 +66,33 @@ body {
 }
 
 .cover {
-    height: 221px;
-    background-image: url(/images/cover.svg);
+    /*background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-size: 95%;
-    background-position: 110% 100%;
-    margin-bottom: 1px;
+    background-position: 110% 100%;*/
 }
 
 .cover__title {
     font-family: "EB Garamond";
     font-size: 72px;
+    line-height: 72px;
     font-weight: normal;
-    line-height: 55px;
     display: flex;
     flex-direction: column;
-    margin: 0 22px 0 20px;
-}
-
-.cover-text-left {
-    text-align: left;
-    margin-bottom: 0;
+    margin: 0 22px 28px 20px;
 }
 
 .cover-text-center {
     text-align: center;
-    margin: 0;
 }
 
 .cover-text-right {
     text-align: right;
-    margin: 0;
+    padding-bottom: 5px;
 }
 
 .intro {
-    padding: 28px 20px 37px;
+    padding: 0px 20px 37px;
 }
 
 .intro__heading {
