@@ -38,12 +38,12 @@ body {
 
 .header {
     padding: 24px 20px;
+    margin-bottom: 1px;
 }
 
 .header__all {
     display: flex;
     justify-content: space-between;
-    max-height: 132px;
 }
 
 .header__logo {
@@ -55,13 +55,13 @@ body {
     list-style: none;
 }
 
-.header__menu-item:not(:last-child) {
-    margin-bottom: 12px;
-}
-
 .header__menu-link__all {
     color: inherit;
-    text-underline-offset: 4px
+    text-underline-offset: 3px;
+}
+
+.header__menu-item {
+    margin-bottom: 12px;
 }
 
 .header__menu-item_active {
@@ -69,7 +69,7 @@ body {
 }
 
 .cover {
-    padding: 12px 24px 5px 20px;
+    padding: 0 24px 5px 20px;
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-size: 95% auto;
@@ -83,6 +83,10 @@ body {
     line-height: 72px;
     display: flex;
     flex-direction: column;
+}
+
+.cover-text-left {
+    text-align: left;
 }
 
 .cover-text-center {
@@ -142,7 +146,7 @@ body {
 
 .content-section__list {
     margin-left: 15px;
-    margin-right: 1px;
+    margin-right: 1px; /*Без этого на новую строку не переносится (что с первого раза что-то получается довольно редко)*/
     line-height: 21.6px;
 }
 
