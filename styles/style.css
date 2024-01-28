@@ -66,10 +66,11 @@ body {
 }
 
 .cover {
-    /*background-image: url(/images/cover.svg);
+    background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-size: 95%;
-    background-position: 110% 100%;*/
+    background-position: 110% 50%;
+    min-height: 250px;
 }
 
 .cover__title {
