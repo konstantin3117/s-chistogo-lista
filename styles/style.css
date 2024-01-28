@@ -82,18 +82,22 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 22px 0 20px;
+    line-height: 72px;
 }
 
 .cover-text-left {
     text-align: left;
+    margin-bottom: 0;
 }
 
 .cover-text-center {
     text-align: center;
+    margin: 0;
 }
 
 .cover-text-right {
     text-align: right;
+    margin: 0;
 }
 
 .intro {
