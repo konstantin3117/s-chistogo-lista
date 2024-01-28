@@ -70,10 +70,11 @@ body {
 
 .cover {
     padding: 0 24px 5px 20px;
+    height: 221px;
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
-    background-size: 95% auto;
-    background-position: 110% bottom;
+    background-size: 95%;
+    background-position: 110% 100%;
 }
 
 .cover__title {
