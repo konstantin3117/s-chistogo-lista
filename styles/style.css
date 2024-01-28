@@ -61,6 +61,7 @@
     font-weight: 400;
     display: flex;
     flex-direction: column;
+    row-gap: 0.1px;
     line-height: 72px;
     padding-bottom: 7px;
 }
