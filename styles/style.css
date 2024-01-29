@@ -1,15 +1,9 @@
-
 body {
     margin: 0;
-    font-family: "Inter", "Arial", "Helvetica", sans-serif;
-    font-weight: normal;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    background-color: #131313;
   }
-
-  .content-section {
-    box-sizing: border-box;
-    margin: auto;
-    width: 360px;
-}
   
   h1,
   h2,
@@ -20,11 +14,16 @@ body {
   p,
   ul,
   ol,
-  li,
   blockquote {
     margin: 0;
     padding: 0;
   }
+
+.content-section {
+    box-sizing: border-box;
+    margin: auto;
+    width: 360px;
+}
 
 .content-section_theme_dark {
     background-color: #131313;
@@ -39,7 +38,8 @@ body {
 .header__all {
     display: flex;
     justify-content: space-between;
-    padding: 24px 20px;
+    padding-top: 24px;
+    margin: 0 20px 24px;
 }
 
 .header__logo {
@@ -48,67 +48,55 @@ body {
 }
 
 .header__menu-list {
-    list-style: none;
-}
-
-.header__menu-link__all {
-    color: inherit;
-    text-underline-offset: 3px;
-}
-
-.header__menu-item:not(:last-child) {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    row-gap: 13px;
+    text-underline-offset: 2px;
 }
 
 .header__menu-item_active {
     text-decoration: none;
 }
 
-.cover {
-    padding-top: 10px;
-    padding-left: 20px;
-    margin-bottom: 20px;
-    background-image: url(/images/cover.svg);
+a {
+    color: inherit;
+}
+
+h1 {
+    background-image: url(./images/cover.svg);
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 95% auto;
-    height: 100%;
-}
-
-.cover__title {
-    width: 100%;
-    font-family: "EB Garamond", serif;
+    background-position: 0 100%;
+    font-family: "EB Garamond";
     font-size: 72px;
-    font-weight: normal;
-    line-height: 1;
-}
-
-.cover__text {
-    display: inline-block;
+    font-weight: 400;
+    margin: 32px 0 30px 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 100%
 }
 
 .cover-text-center {
-    margin-left: 45px;
+    margin-left: 47px;
 }
 
 .cover-text-right {
     margin-left: 155px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .intro {
-    padding: 5px 20px 37px;
+    margin: 0 20px 37px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .intro__heading {
-    color: #CCC;
     display: flex;
-    line-height: 120%;
-}
-
-.intro__title {
-    font-size: 16px;
-    font-weight: normal;
+    color: #CCCCCC;
 }
 
 .intro__date {
@@ -116,111 +104,114 @@ body {
 }
 
 .intro__main-text {
-    margin-top: 25px;
+    margin-top: 24px;
     line-height: 135%;
 }
 
 .reasons {
-    padding: 40px 20px;
+    padding-top: 40px;
+    margin: 0 20px 40px;
 }
 
 .content-section__subtitle {
-    font-family: "EB Garamond", serif;
+    font-family: "EB Garamond";
     font-size: 28px;
     font-weight: 500;
-    line-height: 114%;
+    line-height: 117%;
     display: flex;
     flex-direction: column;
 }
 
 .reasons-text__right {
-    text-align: right;
+    margin-left: auto;
+}
+
+.reasons-text__left {
+    margin-right: auto;
 }
 
 .content-section__introduction {
-    margin: 32px 0;
+    margin: 31px 0;
     font-size: 20px;
+    font-weight: 400;
     line-height: 135%;
 }
 
 .content-section__list {
-    margin-left: 15px;
-    margin-right: 1px; /*Без этого на новую строку не переносится (что с первого раза что-то получается довольно редко)*/
-    line-height: 21.6px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 1px 40px 15px;
+    text-indent: 0px;
+    line-height: 135%;
+    padding-bottom: 25px;
 }
 
-.content-section__list-accent {
-    font-weight: bold;
-}
-
-.content-section__list-item:not(:last-child) {
+.content-section__list-item {
     margin-bottom: 16px;
 }
 
-.how-to {
-    padding: 40px 20px 60px;
+.content-section__list-accent {
+    font-weight: 700;
 }
 
-.how-to-text__right {
-    text-align: right;
+.how-to {
+    margin: 40px 20px 60px;
+    line-height: 135%;
 }
 
 .card {
     border-radius: 30px;
-    list-style: none;
-}
-
-.card:not(:last-child) {
-    margin-bottom: 34px;
-}
-
-.card:nth-last-child(1) {
-    margin-bottom: 2px;
 }
 
 .card_theme_dark {
     background-color: #343434;
     color: #F5F5F5;
-    padding: 20px;
+    padding: 20.5px;
+    line-height: 170%;
+    
 }
 
 .card_theme_bright {
     background-color: #FEE42A;
     color: #131313;
     padding: 20px;
+    line-height: 135%;
+    margin: 32px 0;
 }
 
-.card__author-photo {
+.how-to-text__right {
+    margin-left: auto;
+}
+
+.img-polyarinov, .img-bunin {
     height: 100px;
 }
 
 .card__author-name {
-    margin: 5px 0 5px;
+    font-size: 16px;
+    font-weight: 700;
     line-height: 135%;
-    letter-spacing: 0.3px;
+    margin-bottom: 8px;
 }
 
 .card__title {
-    font-family: "EB Garamond", serif;
+    font-family: "EB Garamond";
     font-size: 22px;
-    font-style: normal;
     font-weight: 500;
+    margin-bottom: 7px;
     line-height: 135%;
 }
 
 .card__text {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 135%;
-    margin: 7px 1px 0 0;
 }
 
 .footer {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
     padding: 20px;
-    border-top: 1px solid;
+    border-top: 2px solid;
     border-color: #FEE42A;
     display: flex;
     justify-content:space-between;
@@ -228,7 +219,6 @@ body {
 
 .link-vk, .link-youtube {
     text-decoration: none;
-    color: inherit;
     font-size: 14px;
 }
 
