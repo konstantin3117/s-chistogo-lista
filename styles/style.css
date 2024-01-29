@@ -75,8 +75,13 @@ body {
 .cover__title {
     font-family: "EB Garamond";
     font-size: 72px;
-    line-height: 72px;
     font-weight: normal;
+}
+
+.cover_text {
+    margin: 0;
+    padding: 0;
+    line-height: 72px;
 }
 
 .cover-text-center {
