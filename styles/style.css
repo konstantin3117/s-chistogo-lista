@@ -65,27 +65,31 @@ body {
 }
 
 .cover {
-    padding: 7px 24px 32px 20px;
+    padding: 10px 24px 32px 20px;
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 95% auto;
+    height: 100%;
 }
 
 .cover__title {
+    width: 100%;
     font-family: "EB Garamond", serif;
     font-size: 72px;
     font-weight: normal;
-    line-height: 50px;
+    line-height: 1;
+}
+
+.cover__text {
+    display: block;
 }
 
 .cover-text-center {
-    display: block;
     text-align: center;
 }
 
 .cover-text-right {
-    display: block;
     text-align: right;
 }
 
