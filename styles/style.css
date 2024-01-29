@@ -73,23 +73,7 @@ body {
     height: 250px;
 }
 
-.cover__title {
-    font-family: "EB Garamond";
-    font-size: 72px;
-    font-weight: normal;
-    line-height: 72px;
-    padding: 10px 20px 30px 20px;
-}
 
-.cover-text-center {
-    display: block;
-    text-align: center;
-}
-
-.cover-text-right {
-    display: block;
-    text-align: right;
-}
 
 .intro {
     padding: 5px 20px 37px;
