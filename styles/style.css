@@ -39,7 +39,7 @@ body {
 .header__all {
     display: flex;
     justify-content: space-between;
-    margin: 24px 20px;
+    padding: 24px 20px;
 }
 
 .header__logo {
@@ -56,7 +56,7 @@ body {
     text-underline-offset: 3px;
 }
 
-.header__menu-item {
+.header__menu-item:not(:last-child) {
     margin-bottom: 12px;
 }
 
@@ -68,11 +68,8 @@ body {
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
     background-size: 95%;
-    background-position: 110% 90%;
-    min-height: 250px;
-    margin-top: 25px;
-    margin-bottom: 28px;
-    padding: 1px 22px 1px 20px;
+    background-position: 110% 60%;
+    padding: 10px 25px 30px 20px;
 }
 
 .cover__title {
@@ -80,20 +77,20 @@ body {
     font-size: 72px;
     line-height: 72px;
     font-weight: normal;
-    display: flex;
-    flex-direction: column;
 }
 
 .cover-text-center {
+    display: block;
     text-align: center;
 }
 
 .cover-text-right {
+    display: block;
     text-align: right;
 }
 
 .intro {
-    padding: 0px 20px 37px;
+    padding: 5px 20px 37px;
 }
 
 .intro__heading {
