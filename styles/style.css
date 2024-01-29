@@ -65,35 +65,30 @@ body {
 }
 
 .cover {
-    padding-top: 10px;
-    padding-left: 20px;
-    margin-bottom: 20px;
     background-image: url(/images/cover.svg);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right 60%;
     background-size: 95% auto;
-    height: 100%;
 }
 
 .cover__title {
-    width: 100%;
     font-family: "EB Garamond", serif;
     font-size: 72px;
-    font-weight: normal;
-    line-height: 1;
+    font-weight: 400;
+    line-height: 0.5;
+    padding: 30px 20px 47px 20px;
 }
 
 .cover__text {
-    display: inline-block;
+    display: block;
 }
 
 .cover-text-center {
-    margin-left: 45px;
+    text-align: center;
 }
 
 .cover-text-right {
-    margin-left: 155px;
-    padding-bottom: 10px;
+    text-align: right;
 }
 
 .intro {
