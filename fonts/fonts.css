@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Inter";
   font-weight: normal;
-  src: local("EB Garamond"),
+  src: local("Inter"),
 	   url("/fonts/interregular.woff2") format('woff2'), 
 	   url("/fonts/interregular.woff") format('woff'),
 	   url("/fonts/interregular.ttf") format('ttf');
@@ -28,7 +28,7 @@
 @font-face {
   font-family: "Inter";
   font-weight: bold;
-  src: local("EB Garamond"),
+  src: local("Inter"),
 	   url("/fonts/interbold.woff2") format('woff2'), 
 	   url("/fonts/interbold.woff") format('woff'),
 	   url("/fonts/interbold.ttf") format('ttf');
