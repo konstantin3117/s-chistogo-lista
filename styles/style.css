@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
     font-weight: normal;
+    background-color: #1e1e1e;
   }
 
   .content-section {
@@ -51,7 +52,7 @@ body {
     list-style: none;
 }
 
-.header__menu-link__all {
+.header__menu-link-all {
     color: inherit;
     text-underline-offset: 3px;
 }
@@ -60,7 +61,7 @@ body {
     margin-bottom: 12px;
 }
 
-.header__menu-item_active {
+.header__menu-link--active {
     text-decoration: none;
 }
 
@@ -222,12 +223,17 @@ body {
     justify-content:space-between;
 }
 
-.link-vk, .link-youtube {
-    text-decoration: none;
-    color: inherit;
+.footer__links {
+    display: flex;
+    list-style: none;
     font-size: 14px;
 }
 
-.link-vk {
-    margin-right: 13px;
+.footer__vk:not(:last-child) {
+    margin-right: 18px;
+}
+
+.footer__link--vk, .footer__link--youtube {
+    text-decoration: none;
+    color: inherit;
 }
